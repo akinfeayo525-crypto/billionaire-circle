@@ -1,0 +1,19 @@
+BILLIONAIRE CIRCLE — DEPLOYMENT
+
+This project is configured for Render using Node.js 24 and a persistent disk for SQLite.
+
+DEPLOY STEPS
+1. Create a GitHub account at https://github.com/ if you do not already have one.
+2. Create a new repository named billionaire-circle.
+3. Upload the CONTENTS of this project folder to the repository (package.json, server.js, public folder, render.yaml, etc.). Do not upload node_modules or .env.
+4. Sign in at https://render.com/ and choose New > Blueprint.
+5. Connect the GitHub repository. Render reads render.yaml and creates the web service.
+6. When asked for ADMIN_EMAIL and ADMIN_PASSWORD, enter the email you will use for administration and a unique strong password (at least 16 characters).
+7. Deploy. Open the Render URL when the build completes.
+8. Keep the Render persistent disk attached. Do not remove it; it stores member and application records.
+
+IMPORTANT COST / SAFETY NOTES
+- This configuration uses a paid Render Starter service and a persistent disk. It is not a free permanent hosting configuration. Free web services do not provide the persistent disk needed to safely retain this SQLite database.
+- Do not collect real membership payments or loan deposits until your legal entity, financial arrangements, privacy terms, and regulatory obligations have been reviewed. This app only records payment claims manually; it does not process payments or issue loans/cards.
+- Change the admin password to a unique password and keep it private. Never commit .env files or secrets to GitHub.
+- The supplied privacy and terms pages are starter placeholders and must be replaced with reviewed legal documents before public launch.
